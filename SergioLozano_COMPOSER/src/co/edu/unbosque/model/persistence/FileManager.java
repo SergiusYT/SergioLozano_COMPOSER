@@ -40,6 +40,13 @@ public class FileManager {
     }
 
   
+	public String obtenerRutaArchivoSeleccionado() {
+	    if (chooser.getSelectedFile() != null) {
+	        return chooser.getSelectedFile().getAbsolutePath();
+	    } else {
+	        return null;
+	    }
+	}
 	
 	public String leerArchivo() {
 		
